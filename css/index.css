@@ -11,3 +11,36 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
+.carousel{
+  background: #2f4357;
+}
+.carousel-item{
+  text-align: center;
+  height: 130vh;
+}
+.carousel-indicators li{box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 20px;
+ height: 20px;
+ border-radius: 50%;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+text-align: right;}
+  .carousel-indicators{ position: absolute;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    flex-direction:column;
+    padding-left: 0;
+    margin-right: 5%;
+    margin-left: 5%;
+    list-style: none;}
+ 
