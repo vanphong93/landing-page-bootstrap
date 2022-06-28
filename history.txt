@@ -2,3 +2,5 @@
 test up file
 download scourer bootstrap 
 setting button
+28/6 download image
+setting button
