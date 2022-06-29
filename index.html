@@ -42,75 +42,126 @@
 
   <body>
     <!-- START FOOTER -->
-    <footer>
-      <div class="container">
-        <!-- start footer top -->
-        <div
-          class="footer__top mx-auto d-flex justify-content-between align-items-center"
-        >
-          <div class="top__left">
-            <h2>Subscribe Us to join our Community</h2>
-            <p>Newsletter</p>
-          </div>
-          <form class="top__right">
-            <div class="form-group d-flex">
-              <input
-                id="newsletter1"
-                type="email"
-                class="form-control"
-                placeholder="Enter your email"
-              />
-              <button class="btn btn-primary" type="button">Send</button>
-            </div>
-          </form>
+    <footer class="position-relative mt-5 pt-5">
+      <!-- start footer top -->
+      <div
+        class="footer__top mx-auto d-flex justify-content-between align-items-center"
+      >
+        <div class="top__left">
+          <h2>Subscribe Us to join our Community</h2>
+          <p>Newsletter</p>
         </div>
-        <!-- end footer top -->
+        <form class="top__right">
+          <div class="form-group d-flex">
+            <input
+              id="newsletter1"
+              type="email"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+            <button class="btn btn-primary" type="button">Send</button>
+          </div>
+        </form>
+      </div>
+      <!-- end footer top -->
 
-        <!-- start footer body -->
-        <div class="footer__body">
+      <!-- start footer body -->
+      <div class="footer__body">
+        <div class="container">
           <div class="row">
             <!-- start item 1 -->
             <div class="footer__item col-2">
               <h3>QUICK LINKS</h3>
               <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i>
+                    Courses
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i>
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- end item 1 -->
 
             <!-- start item 2 -->
-            <div class="footer__item col-3">
+            <div class="footer__item col-3 pl-lg-5">
               <h3>HELP AND SUPPORT</h3>
               <ul class="list-unstyled">
-                <li><a href="#">Live Chart</a></li>
-                <li><a href="#">Faq</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Terms of Services</a></li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i>
+                    Live Chart
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i>
+                    Faq
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i>
+                    Support
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i>
+                    Terms of Services
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- end item 2 -->
 
             <!-- start item 3 -->
-            <div class="footer__item col-3">
+            <div class="footer__item footer__item3 col-3">
               <h3>CONTACT</h3>
               <ul class="list-unstyled">
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><a href="tel:+44000888999">+44-000-888-999</a></li>
                 <li>
-                  <a href="https://goo.gl/maps/TchYSi5i7ZRm82xw6"
-                    >London, 235 Terry, 10001</a
-                  >
+                  <a href="mailto:info@example.com">
+                    <i class="fa fa-envelope"></i>
+                    info@example.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+44000888999">
+                    <i class="fa fa-phone"></i>
+                    +44-000-888-999
+                  </a>
+                </li>
+                <li>
+                  <a href="https://goo.gl/maps/TchYSi5i7ZRm82xw6">
+                    <i class="fa fa-map-marker-alt"></i>
+                    London, 235 Terry, 10001
+                  </a>
                 </li>
               </ul>
             </div>
             <!-- end item 3 -->
 
             <!-- start item 4 -->
-            <div class="footer__item col-4">
-              <h3>About</h3>
+            <div class="footer__item footer__item4 col-4 pl-lg-5">
+              <h3>ABOUT</h3>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -127,15 +178,24 @@
             <!-- end item 4 -->
           </div>
         </div>
-        <!-- end footer body -->
       </div>
+      <!-- end footer body -->
+
       <!-- start footer bottom -->
       <div class="footer__bottom">
-        <p>@2021 Studious. All rights reserved. Design by W3Layouts</p>
+        <div class="container">
+          <p>@2021 Studious. All rights reserved. Design by W3Layouts</p>
+        </div>
       </div>
       <!-- end footer bottom -->
     </footer>
     <!-- END FOOTER -->
+
+    <!-- START BACK TO TOP -->
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+      <span class="fa fa-level-up"></span>
+    </a>
+    <!-- END BACK TO TOP -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -154,5 +214,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Back to top -->
+    <script src="./js/backtotop_main.js"></script>
+    <script src="./js/backtotop_util.js"></script>
   </body>
 </html>
