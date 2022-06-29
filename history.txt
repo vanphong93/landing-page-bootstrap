@@ -4,3 +4,5 @@ download scourer bootstrap
 setting button
 28/6 download image
 setting button
+29/6 top navbar complete 
+bug click move carousel 
