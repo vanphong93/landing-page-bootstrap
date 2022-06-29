@@ -40,7 +40,16 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
-  <body>
+  <body id="myBody">
+    <!-- START LIGHT/DARK SWITCH -->
+    <div class="switchtheme">
+      <button class="btn" id="switchTheme">
+        <span>Dark</span>
+        <span>Light</span>
+      </button>
+    </div>
+    <!-- END LIGHT/DARK SWITCH -->
+
     <!-- START FOOTER -->
     <footer class="position-relative mt-5 pt-5">
       <!-- start footer top -->
@@ -214,7 +223,12 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
+    <!-- LIGHT/DARK THEME SWITCH -->
+    <script>
+      document.getElementById("switchTheme").onclick = function () {
+        document.getElementById("myBody").classList.toggle("light");
+      };
+    </script>
     <!-- Back to top -->
     <script src="./js/backtotop_main.js"></script>
     <script src="./js/backtotop_util.js"></script>
