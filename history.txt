@@ -6,3 +6,4 @@ setting button
 setting button
 29/6 top navbar complete 
 bug click move carousel 
+30_6 change color and setting navbar
