@@ -99,6 +99,7 @@ body {
 
 .carousel {
   background: #2f4357;
+  height: 80vh;
 }
 
 .carousel-item {
@@ -122,6 +123,7 @@ body {
   left: 20%;
 }
 
+
 .carousel h1 {
   font-size: 57px;
   font-weight: bolder;
@@ -139,11 +141,77 @@ body {
   background-color: #ff6e65;
   transition: all .5s;
 }
-.carousel .btn i{background-color: none;color: black;}
-.carousel .btn-outline:hover i{color: white;transition: .5s;}
-.carousel-indicators .active {background-color:#ff6e65;}
 
+.carousel .btn i {
+  background-color: none;
+  color: black;
+}
 
+.carousel .btn-outline:hover i {
+  color: white;
+  transition: .5s;
+}
+
+.carousel-indicators .active {
+  background-color: #ff6e65;
+}
+
+.carousel_bottom {
+  /* height: 25vh; */
+  position: absolute;
+  left: 50%;
+  /* border: 1px solid red; */
+  transform: translate(-50%, -30%);
+  text-align: center;
+  width: 60%;
+}
+
+.carousel_bottom .flex-box {
+  border-radius: 10px;
+  height: 20vh;
+}
+
+.carousel_bottom i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.carousel_bottom h3:hover {
+  color: black;
+  transition: all .7s;
+  cursor: pointer;
+}
+
+.intro .tittle {
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 300px;
+}
+
+.intro .tittle .line {
+  width: 5%;
+  border-top: 2px solid #b7b7b7;
+  margin: auto;
+}
+
+.intro .tittle .line_2 {
+  width: 5%;
+  border-top: 2px solid #b7b7b7;
+  margin: 10px 49%
+}
+
+.intro .container .inside {
+  /* border: 1px solid red; */
+  height: 30vh;
+}
+
+.intro .container .inside i {
+  font-size: 30px;
+  color: #4867b0;
+width: 70px;height: 70px;line-height: 70px;
+}
+.intro .container .inside p{color: #b7b7b7;}
+.intro .container .inside h3:hover {color: #ff6e65;transition: .6s;cursor: pointer;}
 
 
 

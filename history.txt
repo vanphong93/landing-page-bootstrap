@@ -8,3 +8,6 @@ setting button
 bug click move carousel 
 30_6 change color and setting navbar
 bug git push
+1_7 2:02pm add intro
+bug responsive
+bug move carousel
