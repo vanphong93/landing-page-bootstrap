@@ -51,21 +51,21 @@ p {
 }
 /* END LIGHT/DARK SWITCH */
 
-/* START INSTRUCTOR */
-/* start instructor top */
-.instructor__top {
+/* START feedback */
+/* start feedback top */
+.feedback__top {
   max-width: 700px;
 }
-.instructor__top h2 {
+.feedback__top h2 {
   position: relative;
   color: #fdfffc;
   font-size: 2.5rem;
 }
-.light .instructor__top h2 {
+.light .feedback__top h2 {
   color: #060606;
 }
-.instructor__top h2::before,
-.instructor__top h2::after {
+.feedback__top h2::before,
+.feedback__top h2::after {
   content: "";
   display: block;
   background: #b7b7b7;
@@ -75,80 +75,96 @@ p {
   right: 0;
   margin: 0 auto;
 }
-.light .instructor__top h2::before,
-.light .instructor__top h2::after {
+.light .feedback__top h2::before,
+.light .feedback__top h2::after {
   background: #707070;
 }
-.instructor__top h2::before {
+.feedback__top h2::before {
   bottom: -8px;
   left: -20px;
 }
-.instructor__top h2::after {
+.feedback__top h2::after {
   bottom: -15px;
   left: 20px;
 }
-.instructor__top h2 span {
+.feedback__top h2 span {
   color: #ff6565;
 }
-/* end instructor top */
+/* end feedback top */
 
-/* start instructor bottom */
-.instructor__team .card {
-  background: transparent;
-  border: none;
-  border-radius: 8px;
-  padding: 10px;
+/* start feedback bottom */
+.feedback__bottom .feedback__item .card {
+  background: #161c2d;
   box-shadow: 0 20px 62px hsla(222, 34%, 17%, 1);
+  border-radius: 4px;
+  border: none;
 }
-.light .instructor__team .card {
+.light .feedback__bottom .feedback__item .card {
   background: #fff;
   box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
 }
-.instructor__team .team__image {
-  position: relative;
-  overflow: hidden;
+.feedback__bottom .feedback__item .card .card-body {
+  padding: 2rem;
 }
-.instructor__team .team__image img {
-  border-radius: 8px 8px 0 0;
+.feedback__bottom .feedback__item .card-body .feedback__comment q {
+  line-height: 28px;
+  letter-spacing: 0.4px;
 }
-.instructor__team .team__image .team__info {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: rgb(8 8 8 / 29%);
-  padding: 20px 0;
-  transform: translateY(100%);
-  transition: 0.5s;
+.feedback__bottom .feedback__item .card-body .feedback__comment q::before {
+  font-family: initial;
+  font-size: 3.13rem;
+  line-height: 0.8;
+  color: #ff6565;
+  padding-top: 8px;
 }
-.instructor__team .card:hover .team__image .team__info {
-  transform: translateY(0);
+.feedback__bottom .feedback__item .card-body .feedback__student {
+  margin-top: 2em;
 }
-.instructor__team .team__image .team__info a {
-  display: inline-block;
+.feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__image {
+  width: 23.5%;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+.feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__image
+  img {
   border-radius: 50%;
-  background: #fff;
-  width: 1.75rem;
-  height: 1.75rem;
-  line-height: 1.75rem;
-  color: #4867b0;
-  font-size: 0.88rem;
-  transition: 0.5s;
+  max-width: 100%;
 }
-.light .instructor__team .team__image .team__info a {
-  color: #0d369f;
-}
-.instructor__team .team__image .team__info a:hover {
-  opacity: 0.8;
-}
-.instructor__team .card .card-body h5 {
+.feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__detail
+  p:first-child {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: #fdfffc;
-  transition: 0.5s;
 }
-.light .instructor__team .card .card-body h5 {
+.light
+  .feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__detail
+  p:first-child {
   color: #060606;
 }
-.instructor__team .card:hover .card-body h5 {
-  color: #ff6565;
+.feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__detail
+  p:last-child {
+  font-size: 0.81rem;
 }
-/* end instructor bottom */
-/* END INSTRUCTOR */
+/* end feedback bottom */
+/* END feedback */
