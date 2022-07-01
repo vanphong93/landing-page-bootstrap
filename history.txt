@@ -11,3 +11,7 @@ bug git push
 1_7 2:02pm add intro
 bug responsive
 bug move carousel
+bug git
+OAuth token info request failed: A task was canceled.
+remote: HTTP Basic: Access denied
+fatal: Authentication failed for 'https://gitlab.com/ktphuc1994/bc04-nhom4-capstone-bootstrap.git/'
