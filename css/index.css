@@ -16,6 +16,7 @@ body.light {
 }
 p {
   margin: 0;
+  letter-spacing: 0.4px;
 }
 /* END GLOBAL */
 
@@ -53,7 +54,6 @@ p {
 
 /* START CONTACT */
 .contact .contact__right h2 {
-  margin-bottom: 16px;
   font-family: "Montserrat", sans-serif;
   font-size: 2.2rem;
   font-weight: 600;
@@ -80,3 +80,13 @@ p {
   background: #4867b0;
 }
 /* END CONTACT */
+
+/* START RESPONSIVE */
+/* start contact */
+@media screen and (max-width: 560px) {
+  .contact .contact__right h2 {
+    font-size: 1.88rem;
+    line-height: 2.5rem;
+  }
+}
+/* end contact */
