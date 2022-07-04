@@ -14,8 +14,12 @@ body.light {
   margin: 0;
   box-sizing: border-box;
 }
+h2 {
+  margin: 0;
+}
 p {
   margin: 0;
+  letter-spacing: 0.4px;
 }
 /* END GLOBAL */
 
@@ -59,7 +63,10 @@ p {
 .instructor__top h2 {
   position: relative;
   color: #fdfffc;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.13rem;
 }
 .light .instructor__top h2 {
   color: #060606;
@@ -89,6 +96,8 @@ p {
 }
 .instructor__top h2 span {
   color: #ff6565;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 /* end instructor top */
 
