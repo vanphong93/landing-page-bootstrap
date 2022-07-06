@@ -9,13 +9,15 @@ body.light {
   background: #fff;
   color: #707070;
 }
-* {
+*,
+ul,
+h2,
+p {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 p {
-  margin: 0;
   letter-spacing: 0.4px;
 }
 /* END GLOBAL */
@@ -55,9 +57,9 @@ p {
 /* START CONTACT */
 .contact .contact__right h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.19rem;
   font-weight: 600;
-  line-height: 2.8rem;
+  line-height: 2.81rem;
   color: #fdfffc;
 }
 .light .contact .contact__right h2 {
@@ -78,6 +80,13 @@ p {
 }
 .contact .contact__right button:hover {
   background: #4867b0;
+}
+.light .contact .contact__right button:hover {
+  background: #0d369f;
+}
+.contact .contact__right button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgb(46 202 139 / 25%);
 }
 /* END CONTACT */
 
