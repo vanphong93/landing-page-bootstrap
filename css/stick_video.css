@@ -39,3 +39,10 @@
 .visible .sticky-video.stuck .sticky-video__top-blur {
   display: block;
 }
+@media screen and (max-width: 575.99px) {
+  .visible .sticky-video.stuck {
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+  }
+}
