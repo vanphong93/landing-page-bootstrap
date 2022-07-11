@@ -4,9 +4,15 @@ var $video = $(".sticky-video");
 var videoHeight = $video.outerHeight();
 
 // START video close button
-document.getElementById("close-sticky-video").onclick = function () {
-  document.getElementById("sticky-video").classList.remove("visible");
-};
+$("#close-sticky-video").on("click", function () {
+  $("#sticky-video").removeClass("visible");
+  $(".sticky-video-iframe").each(function () {
+    this.contentWindow.postMessage(
+      '{"event":"command","func":"pauseVideo","args":""}',
+      "*"
+    );
+  });
+});
 // END video close button
 
 // START video sticky scroll
