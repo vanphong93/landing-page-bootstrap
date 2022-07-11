@@ -36,6 +36,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- STICK VIDEO CSS -->
+    <link rel="stylesheet" href="./css/stick_video.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -286,7 +289,7 @@
     <!-- END CONTACT -->
 
     <!-- START FOOTER -->
-    <footer class="position-relative mt-5 pt-5">
+    <footer class="footer position-relative mt-5 pt-5">
       <!-- start footer top -->
       <div class="footer__top mx-lg-auto">
         <div class="row">
@@ -428,6 +431,33 @@
     </a>
     <!-- END BACK TO TOP -->
 
+    <!-- START STICKY VIDEO -->
+    <div class="sticky-video-wrap visible" id="sticky-video">
+      <div
+        class="sticky-video d-flex flex-direction flex-column align-items-center"
+      >
+        <div class="sticky-video__top-blur">
+          <img
+            src="./image/cross.svg"
+            alt="close"
+            class="close-sticky-video"
+            id="close-sticky-video"
+            data-target="sticky-video"
+          />
+        </div>
+        <iframe
+          width="840"
+          height="450"
+          src="https://www.youtube.com/embed/kcSEsljlges"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- END STICKY VIDEO -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -454,5 +484,7 @@
     <!-- BACK TO TOP -->
     <script src="./js/backtotop_main.js"></script>
     <script src="./js/backtotop_util.js"></script>
+    <!-- STICKY VIDEO -->
+    <script src="./js/stick_video.js"></script>
   </body>
 </html>
