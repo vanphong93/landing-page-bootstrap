@@ -25,7 +25,7 @@ $window.on("scroll", function () {
     $video.addClass("stuck");
   } else {
     $videoWrap.height("auto");
-    $videoWrap.addClass("visible");
+    // $videoWrap.addClass("visible");
     $video.removeClass("stuck");
   }
 });

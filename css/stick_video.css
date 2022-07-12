@@ -45,4 +45,7 @@
     left: 0;
     max-width: 100%;
   }
+  .sticky-video iframe {
+    height: 330px;
+  }
 }
