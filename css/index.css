@@ -1,6 +1,7 @@
 html,
 body {
   background: #161c2d;
+  /* background-color: white; */
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
 }
@@ -15,7 +16,7 @@ body {
 
 
 .top.navbar .left a {
-  font-size: medium;
+  font-size: 15px;
 }
 
 .top.navbar.right a {
@@ -37,6 +38,10 @@ body {
   color: #ff6e65;
 }
 
+.navbar.navbar-expand {
+  height: 10vh;
+}
+
 /* .a:hover{color: #ff6e65;} */
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #ff6e65;
@@ -51,7 +56,7 @@ body {
   color: #ff6e65;
 }
 
-.navbar-expand-lg.navbar-dark .navbar-brand:hover {
+.navbar-expand.navbar-dark .navbar-brand:hover {
   color: #ff6e65;
   transition: all 1s;
 }
@@ -67,6 +72,81 @@ body {
 }
 
 /* #navbarSupportedContent li{margin-right: 70px;} */
+/* .btn_navbar {
+  position: relative;
+  z-index: 10;
+  width: 20%;
+  display: none;
+} */
+.none {
+  display: none;
+}
+
+.changeBar {
+  transform: translateX(110%);
+}
+
+.closeBar,
+.openBar {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* .btn-navbar {
+  position: relative;
+  z-index: 10;
+  width: 20%;
+  display: none;
+} */
+/* .btn_navbar {
+  display: block;
+  width: 40%;
+  height: auto;
+} */
+
+@media screen and (max-width:576px) {
+  .navbar-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .top.navbar {
+    display: none;
+  }
+
+  .collapse.navbar-collapse {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    background-color: #161c2d;
+    transition: all 0.5ms;
+  }
+
+  /* .carousel_bottom {
+    flex-direction: column;
+  } */
+
+  .carousel_bottom .flex-box {
+    width: 100%;
+    margin: 10px 0px;
+    height: 30vh;
+  }
+
+  .collapse.navbar-collapse ul {
+    margin: 0 auto;
+  }
+
+}
+
+
+
+
+
+
 .collapse .form-control {
   border-radius: 1rem;
   border-right: none;
@@ -96,15 +176,16 @@ body {
   color: #ff6e65;
   transition: all .7s;
 }
-
+.carousel img{ height: 70vh;object-fit: cover;}
 .carousel {
-  background: #2f4357;
-  height: 80vh;
+  /* background: #2f4357; */
+
+ 
 }
 
 .carousel-item {
   text-align: center;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .carousel-indicators li {
@@ -208,10 +289,20 @@ body {
 .intro .container .inside i {
   font-size: 30px;
   color: #4867b0;
-width: 70px;height: 70px;line-height: 70px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
 }
-.intro .container .inside p{color: #b7b7b7;}
-.intro .container .inside h3:hover {color: #ff6e65;transition: .6s;cursor: pointer;}
+
+.intro .container .inside p {
+  color: #b7b7b7;
+}
+
+.intro .container .inside h3:hover {
+  color: #ff6e65;
+  transition: .6s;
+  cursor: pointer;
+}
 
 
 
