@@ -34,13 +34,14 @@ body {
   transition: all 1s;
 }
 
+/*  top end */
 .collapse a:hover {
   color: #ff6e65;
 }
 
-.navbar.navbar-expand {
+/* .navbar.navbar-expand {
   height: 10vh;
-}
+} */
 
 /* .a:hover{color: #ff6e65;} */
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -95,58 +96,14 @@ body {
   cursor: pointer;
 }
 
-/* .btn-navbar {
-  position: relative;
-  z-index: 10;
-  width: 20%;
-  display: none;
-} */
-/* .btn_navbar {
-  display: block;
-  width: 40%;
-  height: auto;
-} */
-
-@media screen and (max-width:576px) {
-  .navbar-nav {
-    display: block;
-    text-align: center;
-  }
-
-  .top.navbar {
-    display: none;
-  }
-
-  .collapse.navbar-collapse {
-    width: 100%;
-    position: fixed;
-    right: 0;
-    top: 10%;
-    background-color: #161c2d;
-    transition: all 0.5ms;
-  }
-
-  /* .carousel_bottom {
-    flex-direction: column;
-  } */
-
-  .carousel_bottom .flex-box {
-    width: 100%;
-    margin: 10px 0px;
-    height: 30vh;
-  }
-
-  .collapse.navbar-collapse ul {
-    margin: 0 auto;
-  }
-
+.btn_navbar i {
+  width: 30px;
+  height: 30px;
+  background-color: #4867b0;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 2px;
 }
-
-
-
-
-
-
 .collapse .form-control {
   border-radius: 1rem;
   border-right: none;
@@ -176,11 +133,11 @@ body {
   color: #ff6e65;
   transition: all .7s;
 }
-.carousel img{ height: 70vh;object-fit: cover;}
-.carousel {
-  /* background: #2f4357; */
 
- 
+/* chinh hinh nen */
+.carousel img {
+  height: 90vh;
+  object-fit: cover;
 }
 
 .carousel-item {
@@ -241,15 +198,15 @@ body {
   /* height: 25vh; */
   position: absolute;
   left: 50%;
-  /* border: 1px solid red; */
   transform: translate(-50%, -30%);
   text-align: center;
-  width: 60%;
+  width: 70%;
 }
 
 .carousel_bottom .flex-box {
   border-radius: 10px;
-  height: 20vh;
+  height: 250px;
+  width: 25%;
 }
 
 .carousel_bottom i {
@@ -283,7 +240,7 @@ body {
 
 .intro .container .inside {
   /* border: 1px solid red; */
-  height: 30vh;
+  /* height: 30vh; */
 }
 
 .intro .container .inside i {
@@ -304,51 +261,80 @@ body {
   cursor: pointer;
 }
 
+.carousel-caption {
+  width: 25%;
+}
 
+@media screen and (max-width:992px) {
+  .btn_navbar {
+    /* position: relative; */
+    z-index: 10;
+    width: 20%;
+    /* display: none; */
+  }
 
+  .navbar-nav {
+    display: block;
+    text-align: center;
+  }
 
+  .top.navbar {
+    display: none;
+  }
 
+  .collapse.navbar-collapse {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    background-color: #161c2d;
+    transition: all 0.5ms;
+  }
 
+  .collapse.navbar-collapse ul {
+    margin: 0 auto;
+  }
 
+  .carousel-caption {
+    left: 5%;
+    width: auto;
+  }
 
+  .carousel_bottom {
+    /* height: 25vh; */
+    position: absolute;
+    transform: translate(-52%, -8%);
+    text-align: center;
+    width: 85%;
+  }
 
+  .carousel_bottom .flex-box {
+    width: 100%;
+    margin: 0 0 15px 0;
+    /* height:200px; */
+  }
 
+  .carousel-indicators {
+    bottom: 10%;
+  }
 
+  .carousel_bottom .flex-box {
+    height: 180px;
+  }
+  .navbar-dark .navbar-nav .nav-item.active .nav-link {
+    color: #ff6e65;
+  }
+}
 
+@media screen and (max-width:768px) {
+  .intro .tittle {
+    text-align: center;
+    margin-top: 850px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-s {
-  --theme-color: #e40000;
-  --primary-color: #4867b0;
-  --primary-light: #ffc945;
-  --secondary-color: #ff6e65;
-  --primary-dark: #00070c;
-  --font-color: #b7b7b7;
-  --bg-color: #161c2d;
-  --bg-color-2: transparent;
-  --heading-color: #fdfffc;
-  --footer-color: #0e0e0e;
-  --footer-cpy-color: #060606;
-  --border-color: rgba(255, 255, 255, 0.2);
-  --border-color-light: rgba(255, 255, 255, 0.2);
-  --iframe-filter: grayscale(100%);
-  --bg-grey: #060e1f;
-  --bg-light: #121725;
-  --bg-dark-color: #27282b;
-  --quote-text-color: #e6e6e6;
-  --paceholder-color-search: #eee;
-  --bg-color-li: rgb(168 176 195 / 11%);
-  --box-shadow-color: hsla(222, 34%, 17%, 1);
-  --logo-color: #fff;
+.check {
+  background: pink;
+  height: 500px;
+  margin-top: 100px;
 }
