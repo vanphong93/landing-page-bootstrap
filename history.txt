@@ -17,3 +17,4 @@ remote: HTTP Basic: Access denied
 fatal: Authentication failed for 'https://gitlab.com/ktphuc1994/bc04-nhom4-capstone-bootstrap.git/'
 12_7_2022 bug responsive , add button menu
 13_7_2022 fig bug responsive
+14_7_2022 responsive complete
