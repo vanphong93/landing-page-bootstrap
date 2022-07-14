@@ -28,6 +28,7 @@
 </head>
 
 <body>
+  <!-- top navbar -->
   <nav class="top navbar navbar-dark" style="background-color: #4867b0">
     <div class="left">
       <a class="navbar-brand" href="#">Have any question ?</a>
@@ -41,8 +42,9 @@
       <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i></a>
       <a class="navbar-brand" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
     </div>
-
   </nav>
+
+  <!-- sticky top bar -->
   <nav class="navbar navbar-expand navbar-dark sticky-top" style="background-color: #161c2d">
     <img src="./image/logo.png" alt="logo">
     <a class="navbar-brand ml-2" href="#">Studious</a>
@@ -90,6 +92,7 @@
       </ul>
     </div>
   </nav>
+  <!-- carousel and big image -->
   <div class="container-xl">
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel" data-touch="true">
       <!-- Carousel indicators -->
@@ -116,23 +119,24 @@
           </div>
         </div>
       </div>
-      <div class="carousel_bottom d-md-flex justify-content-center">
-        <div class="flex-box p-4 mx-2 d-flex flex-column justify-content-center" style="background-color: #037ef3;" ><i class="fa fa-cogs"></i>
+      <div class="carousel_bottom d-flex justify-content-center">
+        <div class="flex-box p-lg-2 mx-2 d-flex flex-column justify-content-center" style="background-color: #037ef3;" ><i class="fa fa-cogs"></i>
           <h3>Engineering & Architecture</h3>
         </div>
-        <div class="flex-box p-4 mx-2 d-flex flex-column justify-content-center" style="background-color:#ffc949;"><i class="fa fa-book"></i>
+        <div class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center" style="background-color:#ffc949;"><i class="fa fa-book"></i>
           <h3>Learning  Management</h3>
         </div>
-        <div class="flex-box p-4 mx-2 d-flex flex-column justify-content-center" style="background-color: #ff4f81;" ><i class="fa fa-coffee"></i>
+        <div class="flex-box p-lg-4 mx-2 d-flex flex-column justify-content-center" style="background-color: #ff4f81;" ><i class="fa fa-coffee"></i>
           <h3>Business & Management</h3>
         </div>
-        <div class="flex-box p-4 mx-2 d-flex flex-column justify-content-center" style="background-color: #1ee697;" ><i
+        <div class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center" style="background-color: #1ee697;" ><i
             class="fa fa-hourglass"></i>
-          <h3>Artificial <br> Intelligence</h3>
+          <h3>Artificial Intelligence</h3>
         </div>
       </div>
     </div>
   </div>
+  <!-- welcome to studio -->
   <div class="intro" style="height:auto;">
     <div class="tittle">
       <div class="welcome mb-5">
@@ -140,30 +144,25 @@
         <div class="line"></div>
         <div class="line_2"></div>
       </div>
-      <!-- <h5>1</h5> -->
-      <!-- <div class="progress" style="height: 10px;">
-        <div class="progress-bar" role="progressbar" style="width:10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-    </div> -->
-      <div class="container d-md-flex">
+      <div class="container d-flex">
         <div class="inside d-flex justify-content-center">
-          <div class="flex-box  mx-2 d-flex flex-column justify-content-center">
-            <span><i class="fa fa-graduation-cap bg-dark rounded-circle"></i></span>
-            <h3 class="mb-3 mt-3">Trending Courses</h3>
+          <div class="flex-box mx-2 d-flex flex-column justify-content-center">
+            <span><i class="fa fa-graduation-cap bg-dark rounded-circle mt-1"></i></span>
+            <h3 class="my-3">Trending Courses</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
           </div>
         </div>
         <div class="inside d-flex justify-content-center">
-          <div class="flex-box  mx-2 d-flex flex-column justify-content-center">
-            <span><i class="fa fa-users bg-dark rounded-circle"></i></span>
-            <h3 class="mb-3 mt-3">Certified Teachers</h3>
+          <div class="flex-box mx-2 d-flex flex-column justify-content-center">
+            <span><i class="fa fa-users bg-dark rounded-circle mt-1"></i></span>
+            <h3 class="my-3">Certified Teachers</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
           </div>
         </div>
         <div class="inside d-flex justify-content-center">
-          <div class="flex-box  mx-2 d-flex flex-column justify-content-center">
-            <span><i class="fa fa-book bg-dark rounded-circle"></i></span>
-            <h3 class="mb-3 mt-3">Book   &   Library</h3>
+          <div class="flex-box mx-2 d-flex flex-column justify-content-center">
+            <span><i class="fa fa-book bg-dark rounded-circle mt-1"></i></span>
+            <h3 class="my-3">&nbsp Book & &nbspLibrary &nbsp</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
           </div>
         </div>
@@ -205,7 +204,7 @@
             closeBar.classList.add("none");
           }
         }
-        var breakpoint = window.matchMedia("(max-width: 992px)")
+        var breakpoint = window.matchMedia("(max-width: 1200px)")
         // Call listener function at run time
         windowResize(breakpoint);
         // Attach listener function on state changes
