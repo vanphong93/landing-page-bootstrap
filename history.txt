@@ -18,3 +18,6 @@ fatal: Authentication failed for 'https://gitlab.com/ktphuc1994/bc04-nhom4-capst
 12_7_2022 bug responsive , add button menu
 13_7_2022 fig bug responsive
 14_7_2022 responsive complete
+15_7_2022 add theme light
+fix swipe carousel
+complete
