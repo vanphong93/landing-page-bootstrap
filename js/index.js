@@ -49,8 +49,8 @@ document.getElementById("switchButton").onclick = function () {
   $( document ).ready(function() {
 
     $(".carousel").carousel({
-        interval: false,
-        pause: true
+        interval: true,
+        pause: false,
     });
   
     $( ".carousel .carousel-inner" ).swipe( {
