@@ -1,13 +1,59 @@
+/* START GLOBAL */
 html,
 body {
   background: #161c2d;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  color: #b7b7b7;
+}
+body.light {
+  background: #fff;
+  color: #707070;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
 }
+p {
+  margin: 0;
+}
+/* END GLOBAL */
+/* START COURSE */
+.Course-grids-blocks-5{
+  background: #121725;
+  
+}
+
+
+/* END COURSE */
+/* START LIGHT/DARK SWITCH */
+#switchTheme {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  padding: 15px 20px;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+.light #switchTheme {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+#switchTheme span:first-child {
+  color: #000;
+  display: block;
+}
+.light #switchTheme span:first-child {
+  display: none;
+}
+#switchTheme span:last-child {
+  display: none;
+}
+.light #switchTheme span:last-child {
+  display: block;
+}
+/* END LIGHT/DARK SWITCH */

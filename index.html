@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Studious</title>
+    <title>Studious_p</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -39,7 +39,22 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
+  <body id="myBody">
+    <!-- START LIGHT/DARK SWITCH -->
+    <div class="switchtheme">
+      <button class="btn" id="switchTheme">
+        <span>Dark</span>
+        <span>Light</span>
+      </button>
+    </div>
+    <!-- END LIGHT/DARK SWITCH -->
+
+    <!-- START COURSE -->
+    <div class="Course-grids-blocks-5 py-5">
+      <div class="container"></div>
+    </div>
+    <!-- END COURSE -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -57,5 +72,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- LIGHT/DARK THEME SWITCH -->
+    <script>
+      document.getElementById("switchTheme").onclick = function () {
+        document.getElementById("myBody").classList.toggle("light");
+      };
+    </script>
   </body>
 </html>
