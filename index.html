@@ -15,9 +15,10 @@
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
-    rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -27,7 +28,7 @@
   <link rel="stylesheet" href="./css/index.css" />
 </head>
 
-<body>
+<body  id="myBody">
   <!-- top navbar -->
   <nav class="top navbar navbar-dark" style="background-color: #4867b0">
     <div class="left">
@@ -86,15 +87,22 @@
               <div class="input-group-append">
                 <button class="btn btn-outline" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
+              </div>
+             
             </div>
           </form>
         </li>
       </ul>
+      <!-- button dark/light theme -->
+      <button class="switch" id="switchButton"  title="Click to switch theme">
+        <i class="far fa-moon"></i>
+        <i class="far fa-sun"></i>
+      </button>
     </div>
   </nav>
   <!-- carousel and big image -->
   <div class="container-xl">
-    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel" data-touch="true">
+    <div id="myCarousel" class="carousel slide" data-interval="100000" data-ride="carousel" data-touch="false">
       <!-- Carousel indicators -->
       <ol class="carousel-indicators flex-column align-items-end mx-4">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -120,17 +128,20 @@
         </div>
       </div>
       <div class="carousel_bottom d-flex justify-content-center">
-        <div class="flex-box p-lg-2 mx-2 d-flex flex-column justify-content-center" style="background-color: #037ef3;" ><i class="fa fa-cogs"></i>
+        <div class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center" style="background-color: #037ef3;">
+          <i class="fa fa-cogs"></i>
           <h3>Engineering & Architecture</h3>
         </div>
-        <div class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center" style="background-color:#ffc949;"><i class="fa fa-book"></i>
-          <h3>Learning  Management</h3>
+        <div class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center" style="background-color:#ffc949;"><i
+            class="fa fa-book"></i>
+          <h3>Learning Management</h3>
         </div>
-        <div class="flex-box p-lg-4 mx-2 d-flex flex-column justify-content-center" style="background-color: #ff4f81;" ><i class="fa fa-coffee"></i>
+        <div class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center" style="background-color: #ff4f81;">
+          <i class="fa fa-coffee"></i>
           <h3>Business & Management</h3>
         </div>
-        <div class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center" style="background-color: #1ee697;" ><i
-            class="fa fa-hourglass"></i>
+        <div class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center" style="background-color: #1ee697;">
+          <i class="fa fa-hourglass"></i>
           <h3>Artificial Intelligence</h3>
         </div>
       </div>
@@ -167,7 +178,7 @@
           </div>
         </div>
       </div>
-<div class="check"></div>
+      <div class="check"></div>
 
 
 
@@ -185,8 +196,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
       <script>$('.carousel').carousel({
-          pause: true,
-          interval: false,
+          // pause: true,
+          // interval: 3000,
         })</script>
       <script>var navBar = document.getElementById("navbarSupportedContent");
         var openBar = document.getElementById("open");
@@ -226,7 +237,7 @@
         });</script>
 
 
-
+<script src="./js/index.js"></script>
 </body>
 
 </html>
