@@ -21,3 +21,4 @@ fatal: Authentication failed for 'https://gitlab.com/ktphuc1994/bc04-nhom4-capst
 15_7_2022 add theme light
 fix swipe carousel
 complete
+16_7_2022 fix bug responsive
