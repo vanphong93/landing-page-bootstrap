@@ -91,7 +91,7 @@ function windowResize(breakpoint) {
     closeBar.classList.add("none");
   }
 }
-var breakpoint = window.matchMedia("(max-width: 1200px)")
+var breakpoint = window.matchMedia("(max-width: 992px)")
 // Call listener function at run time
 windowResize(breakpoint);
 // Attach listener function on state changes

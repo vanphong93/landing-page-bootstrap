@@ -22,3 +22,4 @@ fatal: Authentication failed for 'https://gitlab.com/ktphuc1994/bc04-nhom4-capst
 fix swipe carousel
 complete
 16_7_2022 fix bug responsive
+16_7_2022 6:30pm fix responsive

@@ -247,12 +247,20 @@ body.light {
   transition: all .7s;
 }
 
+#look {
+  width: 210px;
+}
+
 #search .input-group input {
   color: white;
 }
 
 .light #search .input-group input {
   color: black;
+}
+
+#navbarSupportedContent {
+  justify-content: flex-end !important;
 }
 
 /* carousel and big image */
@@ -420,6 +428,33 @@ body.light {
 
 /* media responsive */
 @media screen and (max-width:1200px) {
+
+  .carousel-caption {
+    left: 5%;
+    width: 55%;
+  }
+
+  .carousel h1 {
+    font-size: 57px;
+    line-height: 67px;
+  }
+
+  .carousel_bottom {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+  }
+
+  .navbar-dark .navbar-nav .nav-item.active .nav-link {
+    color: #ff6e65;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .collapse.navbar-collapse ul {
+    margin: 0 auto;
+  }
+
   .btn_navbar {
     z-index: 10;
     width: 20%;
@@ -432,6 +467,13 @@ body.light {
 
   .top.navbar {
     display: none;
+  }
+
+  #switchButton {
+    position: fixed;
+    top: 20px;
+    right: 45px;
+    cursor: pointer;
   }
 
   .collapse.navbar-collapse {
@@ -447,41 +489,6 @@ body.light {
     background: white;
   }
 
-  .collapse.navbar-collapse ul {
-    margin: 0 auto;
-  }
-
-  .carousel-caption {
-    left: 5%;
-    width: 55%;
-  }
-
-  .carousel h1 {
-    font-size: 57px;
-    line-height: 67px;
-  }
-
-  .carousel_bottom {
-    position: absolute;
-
-    text-align: center;
-    width: 90%;
-  }
-
-  .navbar-dark .navbar-nav .nav-item.active .nav-link {
-    color: #ff6e65;
-  }
-
-  #switchButton {
-    position: fixed;
-    top: 20px;
-    right: 45px;
-    cursor: pointer;
-  }
-
-}
-
-@media screen and (max-width:992px) {
   .carousel_bottom {
     margin-left: 10px;
   }
