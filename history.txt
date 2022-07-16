@@ -24,3 +24,4 @@ complete
 16_7_2022 fix bug responsive
 16_7_2022 6:30pm fix responsive
 16_7_2022  fix font and test
+16_7_2022 10pm fix carousel speed

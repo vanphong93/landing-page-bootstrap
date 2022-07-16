@@ -48,10 +48,10 @@ document.getElementById("switchButton").onclick = function () {
 
 $(document).ready(function () {
 
-  $(".carousel").carousel({
-    interval: true,
-    pause: true,
-  });
+  // $(".carousel").carousel({
+  //   interval: false,
+  //   pause: true,
+  // });
 
   $(".carousel .carousel-inner").swipe({
     swipeLeft: function (event, direction, distance, duration, fingerCount) {
