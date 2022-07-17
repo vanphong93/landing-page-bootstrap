@@ -588,7 +588,78 @@
     <!-- END FEATURE/HOME-BLOCK -->
     <!-- START ARCHIVEMENT -->
     <section class="Number_stats py-sm-5 pt-sm-0 pt-5" id="stats">
-      <div class="container py-md-5 py-4"></div>
+      <div class="container py-md-5 py-4">
+        <div class="title_heading text-center mx-auto mb-5 pb-sm-4">
+          <h3 class="title_main">
+            Strength in
+            <span>Number</span>
+          </h3>
+          <p class="mt-4 pt-md-2">
+            Similique sunt in culpa qui officia deserunt mollitia animi, id est
+            laborum et dolorum fuga.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="row text-center">
+            <div class="col-lg-3 col-sm-6">
+              <!-- start -->
+              <div class="counter">
+                <div
+                  class="timer count-title count-number"
+                  data-to="6300"
+                  data-speed="1500"
+                >
+                  6,300
+                </div>
+                <p class="count-text">LEARNERS & COUNTING</p>
+              </div>
+              <!-- end -->
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
+              <!-- start -->
+              <div class="counter">
+                <div
+                  class="timer count-title count-number"
+                  data-to="638"
+                  data-speed="1500"
+                >
+                  638
+                </div>
+                <p class="count-text">TOTAL COURSES</p>
+              </div>
+              <!-- end -->
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
+              <!-- start -->
+              <div class="counter">
+                <div
+                  class="timer count-title count-number"
+                  data-to="7600"
+                  data-speed="1500"
+                >
+                  7,600
+                </div>
+                <p class="count-text">SUCCESSFUL STUDENTS</p>
+              </div>
+              <!-- end -->
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 -mt-4">
+              <!-- start -->
+              <div class="counter border-right-0">
+                <div
+                  class="timer count-title count-number"
+                  data-to="36"
+                  data-speed="1500"
+                >
+                  36
+                </div>
+                <p class="count-text">LANGUAGES</p>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- END ARCHIVEMENT -->
     <!-- Optional JavaScript -->
@@ -608,6 +679,25 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- couter up -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <script>
+      $(".count-number").countUp({
+        time: 6000,
+        delay: 10,
+      });
+    </script>
     <!-- LIGHT/DARK THEME SWITCH -->
     <script>
       document.getElementById("switchTheme").onclick = function () {

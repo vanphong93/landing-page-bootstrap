@@ -224,7 +224,20 @@ ul.rating_list li a{
 }
 /* END FEATURE/HOME-BLOCK */
  /* START ARCHIVEMENT */ 
-
+.title_heading {
+  max-width: 700px; 
+}
+.counter{
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.timer{
+  font-size: 46px;
+  font-weight: 600;
+  color: #fdfffc;
+}
+p.count-text{
+  color: #fdfffc;
+}
 /* END ARCHIVEMENT */ 
 /* START LIGHT/DARK SWITCH */
 #switchTheme {
