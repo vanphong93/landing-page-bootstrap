@@ -19,20 +19,14 @@ body a{
 }
 p {
   margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: #b7b7b7;
+  letter-spacing: .4px;
 }
 h3, h4{
   color: #fdfffc;
-}
-ul{
-  padding: 0;
-  margin: 0;
-}
-img{
-  vertical-align: middle;
-  border-style: none;
-}
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
 }
 /* END GLOBAL */
 /* START COURSE */
@@ -197,8 +191,41 @@ ul.rating_list li a{
 }
 /* END COURSE */
 /* START FEATURE/HOME-BLOCK */
-
+.HomeBlock1 .Services-ab{
+  background: url(../image/bg3.jpg) no-repeat bottom;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.HomeBlock1 .feature_gd{
+  background: #161c2d;
+  padding: 30px;
+  border-radius: 8px;
+}
+.HomeBlock1 .icon{
+  margin-right: 1em;
+}
+.HomeBlock1 .icon i{
+  background: #4867b0;
+  color: #4867b0;
+  font-size: 28px;
+  background: rgb(13 54 159 / 9%);
+  width: 65px;
+  height: 66px;
+  line-height: 65px;
+  border-radius: 50%;
+  text-align: center;
+}
+.HomeBlock1 .fea_gd_vv h5{
+  font-size: 20px;
+  line-height: 30px;
+  color: #fdfffc;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
 /* END FEATURE/HOME-BLOCK */
+ /* START ARCHIVEMENT */ 
+
+/* END ARCHIVEMENT */ 
 /* START LIGHT/DARK SWITCH */
 #switchTheme {
   position: fixed;
