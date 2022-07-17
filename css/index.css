@@ -93,6 +93,7 @@ h3.title_main::before, h3.title_main::after{
   color: #FFFFFF !important;
   text-transform: capitalize;
   margin-right: 5px;
+  text-decoration: none;
 }
 .course_price{
   position: absolute;
@@ -189,6 +190,55 @@ ul.rating_list li a{
   color: #fff;
   transition: 0.3s ease-out;
 }
+/* start light course */
+.light .Course_grids_blocks_5{
+  background: #f8f9ff;
+}
+.light h3.title_main{
+  color: #060606;
+}
+.light h3.title_main::after{
+  background: #707070;
+}
+.light h3.title_main::before{
+  background: #707070;
+}
+.light .Course_grids_blocks_5 .Course_content-main{
+  padding: 20px;
+  border: 1px solid #eee;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #fff;
+}
+.light .Course_grids_blocks_5 .Course_content-main p{
+  color: #707070;
+}
+.light .Course_grids_blocks_5 .Course_content-main li{
+  color: #060606;
+}
+.light .Course_grids_blocks_5 .Course_content-main h4 a{
+  color: #060606;
+}
+.light .Course_grids_blocks_5 .Course_content-main h4 a:hover{
+  color: #ff6e65;
+  text-decoration: none;
+}
+.light .Course_grids_blocks_5 .blog_card{
+  transition: 0.5s;
+}
+.light .Course_grids_blocks_5 .blog_card:hover{
+  box-shadow: 0px 15px 30px rgb(29 23 77 / 8%);
+}
+.light .top_content_boder {
+  border-top: 1px solid #eee;
+}
+.light .btn-style-secondary:hover{
+  background: #0d369f;
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+/* end light course */
 /* END COURSE */
 /* START FEATURE/HOME-BLOCK */
 .HomeBlock1 .Services-ab{
@@ -222,6 +272,21 @@ ul.rating_list li a{
   font-weight: 600;
   margin-bottom: 6px;
 }
+/* start light feature/home-block */
+.light .HomeBlock1 .feature_gd{
+  background: #fff;
+}
+.light .HomeBlock1 .fea_gd_vv h5{
+  color: #060606;
+}
+.HomeBlock1 .fea_gd_vv p{
+  color: #707070;
+}
+.light .HomeBlock1 .icon i{
+  color: #0d369f;
+  background: rgb(13 54 159 / 9%);
+}
+/* end light feature/home-block */
 /* END FEATURE/HOME-BLOCK */
  /* START ARCHIVEMENT */ 
 .title_heading {
@@ -238,6 +303,20 @@ ul.rating_list li a{
 p.count-text{
   color: #fdfffc;
 }
+/* start light archivement */
+.light .Number_stats .title_heading p{
+  color: #707070;
+}
+.light .timer{
+  color: #060606;
+}
+.light p.count-text{
+  color: #060606;
+}
+.light .counter {
+  border-right: 2px solid #eee;
+}
+/* end light archivement */
 /* END ARCHIVEMENT */ 
 /* START LIGHT/DARK SWITCH */
 #switchTheme {
