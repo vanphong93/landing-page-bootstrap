@@ -21,11 +21,7 @@ p {
   box-sizing: border-box;
 }
 p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 16px;
   line-height: 28px;
-  color: #b7b7b7;
   letter-spacing: 0.4px;
 }
 h1,
@@ -89,6 +85,8 @@ h3.title_main {
 }
 h3.title_main span {
   color: #ff6e65;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 h3.title_main::before {
   left: -20px;
@@ -206,7 +204,7 @@ ul.rating_list li {
 }
 ul.rating_list li a {
   color: #ffc949;
-  font-size: 12px;
+  font-size: 13px;
 }
 .btn-style-primary {
   color: #ff6e65;
@@ -232,6 +230,9 @@ ul.rating_list li a {
   border: none;
   transition: 0.25s;
   padding-bottom: 1em;
+}
+.Course_content-main .top_content_boder > a {
+  font-size: 14px;
 }
 .btn-style-primary:hover {
   color: #4867b0;
