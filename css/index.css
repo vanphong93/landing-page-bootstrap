@@ -28,6 +28,10 @@ p {
 h3, h4{
   color: #fdfffc;
 }
+ul{
+  padding: 0;
+  margin: 0;
+}
 /* END GLOBAL */
 /* START COURSE */
 .Course_grids_blocks_5{
@@ -170,12 +174,22 @@ ul.rating_list li a{
   transition: .25s;
 }
 .btn-style{
+  /* padding: 14px 30px; */
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  transition: .25s;
+  /* padding-bottom: 1em; */
+}
+.btn-style-2{
   padding: 14px 30px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 4px;
   border: none;
   transition: .25s;
+  padding-bottom: 1em;
 }
 .btn-style-primary:hover{
   color: #4867b0;
@@ -279,7 +293,7 @@ ul.rating_list li a{
 .light .HomeBlock1 .fea_gd_vv h5{
   color: #060606;
 }
-.HomeBlock1 .fea_gd_vv p{
+.light .HomeBlock1 .fea_gd_vv p{
   color: #707070;
 }
 .light .HomeBlock1 .icon i{
@@ -349,4 +363,29 @@ p.count-text{
   display: block;
 }
 /* END LIGHT/DARK SWITCH */
+/* START RESPONVICE */
+/* @media screen and (max-width: 1199.98px){
+} */
+@media screen and (max-width: 991.98px){
+  .counter{
+    border-right: none;
+  }
+  .timer{
+    font-size: 35px;
+  }
+  p.count-text{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 767.98px){
+  .title_main{
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 575.98px){
+  .title_main{
+    margin-left: 40px; 
+  }
+}
 
+/* END RESPONVICE */
