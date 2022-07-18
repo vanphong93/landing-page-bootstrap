@@ -1,0 +1,28 @@
+27/6_start project
+test up file
+download scourer bootstrap 
+setting button
+28/6 download image
+setting button
+29/6 top navbar complete 
+bug click move carousel 
+30_6 change color and setting navbar
+bug git push
+1_7 2:02pm add intro
+bug responsive
+bug move carousel
+bug git
+OAuth token info request failed: A task was canceled.
+remote: HTTP Basic: Access denied
+fatal: Authentication failed for 'https://gitlab.com/ktphuc1994/bc04-nhom4-capstone-bootstrap.git/'
+12_7_2022 bug responsive , add button menu
+13_7_2022 fig bug responsive
+14_7_2022 responsive complete
+15_7_2022 add theme light
+fix swipe carousel
+complete
+16_7_2022 fix bug responsive
+16_7_2022 6:30pm fix responsive
+16_7_2022  fix font and test
+16_7_2022 10pm fix carousel speed
+18_7_2022 fix bug  responsive
