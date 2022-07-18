@@ -385,14 +385,8 @@ p.count-text{
   }
 }
 @media screen and (max-width: 767.98px){
-  .title_main{
-    margin-left: 15px;
-  }
 }
 @media screen and (max-width: 575.98px){
-  .title_main{
-    margin-left: 40px; 
-  }
 }
 
 /* END RESPONVICE */
