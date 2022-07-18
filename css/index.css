@@ -259,10 +259,6 @@ body.light {
   color: black;
 }
 
-#navbarSupportedContent {
-  justify-content: flex-end !important;
-}
-
 /* carousel and big image */
 .carousel img {
   height: 90vh;
@@ -415,6 +411,7 @@ body.light {
 
 .intro .container .inside h3 {
   color: white;
+  font-size: 24px;
 }
 
 .intro .container .inside h3:hover {
@@ -452,6 +449,7 @@ body.light {
 }
 
 @media screen and (max-width:992px) {
+
   .collapse.navbar-collapse ul {
     margin: 0 auto;
   }
@@ -515,14 +513,21 @@ body.light {
     flex-wrap: wrap;
   }
 
+  .intro .container {
+    flex-wrap: wrap;
+  }
+
+  .intro .container .inside {
+    width: 50%;
+    flex-direction: row;
+  }
+
   .intro .tittle {
     text-align: center;
     margin-top: 500px;
   }
 
-
 }
-
 
 @media screen and (max-width:768px) {
   .carousel h1 {
@@ -548,7 +553,10 @@ body.light {
 
   .intro .container {
     flex-direction: column;
+  }
 
+  .intro .container .inside {
+    width: 100%;
   }
 
   .intro .tittle {
