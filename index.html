@@ -71,30 +71,28 @@
     <!-- END HEADER TOP -->
 
     <!-- START NAVIGATION BAR -->
-    <nav class="navbar navbar-expand navbar-dark sticky-top py-2">
-      <img src="./image/logo.png" alt="logo" />
-      <a class="navbar-brand ml-2 font-weight-bold" href="#">Studious</a>
+    <nav class="navbar navbar-expand navbar-dark sticky-top align-items-center">
+      <a class="logo navbar-brand d-flex align-items-center" href="#"
+        ><img src="./image/logo.png" alt="logo" class="mr-1" />Studious</a
+      >
       <div class="btn_navbar">
         <i id="open" class="openBar fa fa-bars none"></i>
         <i id="closer" class="closeBar fa fa-times none"></i>
       </div>
-      <div
-        class="collapse navbar-collapse font-weight-bold"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item m-2 active">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item mx-xl-1 mx-0 active">
             <a class="nav-link" href="#"
               >HOME <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item m-2">
+          <li class="nav-item mx-xl-1 mx-0">
             <a class="nav-link" href="#">ABOUT US</a>
           </li>
-          <li class="nav-item m-2">
+          <li class="nav-item mx-xl-1 mx-0">
             <a class="nav-link" href="#">COURSES</a>
           </li>
-          <li class="nav-item m-2 dropdown">
+          <li class="nav-item mx-xl-1 mx-0 dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -122,10 +120,10 @@
               <a class="dropdown-item font-weight-bold" href="#">SHORTCODES</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link m-2" href="#">CONTACT US</a>
+          <li class="nav-item mx-xl-1 mx-0">
+            <a class="nav-link" href="#">CONTACT US</a>
           </li>
-          <li class="nav-item m-2" id="look">
+          <li class="nav-item mx-2 my-lg-0 my-2" id="look">
             <form class="d-flex" id="search">
               <div class="input-group">
                 <input
@@ -145,7 +143,7 @@
       </div>
       <!-- button dark/light theme -->
       <button
-        class="switch ml-2"
+        class="switch ml-3"
         id="switchButton"
         title="Click to switch theme"
       >
@@ -156,7 +154,7 @@
     <!-- END NAVIGATION BAR -->
 
     <!-- START CAROUSEL -->
-    <div class="container-xl">
+    <section class="container-xl">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators flex-column align-items-end mx-4">
@@ -169,7 +167,10 @@
             <img src="./image/banner2.jpg" alt="First Slide" />
             <div class="carousel-caption d-block text-left">
               <h1 class="">Master the Skills to Drive your Career</h1>
-              <button type="button" class="btn btn-outline border-0 p-3 mt-3">
+              <button
+                type="button"
+                class="btn btn-outline border-0 mt-sm-5 mt-4"
+              >
                 Know More
                 <i class="fa-solid fa-arrow-right text-black ml-2"></i>
               </button>
@@ -179,7 +180,10 @@
             <img src="./image/banner3.jpg" alt="Second Slide" />
             <div class="carousel-caption d-block text-left">
               <h1 class="">Studious is the best choice for everyone</h1>
-              <button type="button" class="btn btn-outline border-0 p-3 mt-3">
+              <button
+                type="button"
+                class="btn btn-outline border-0 mt-sm-5 mt-4"
+              >
                 Know More
                 <i class="fa-solid fa-arrow-right text-black ml-2"></i>
               </button>
@@ -189,28 +193,28 @@
         <!-- carousel_bottom -->
         <div class="carousel_bottom d-flex justify-content-center">
           <div
-            class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center"
+            class="flex-box mx-2 d-flex flex-column justify-content-center"
             style="background-color: #037ef3"
           >
             <i class="fa fa-cogs mb-3"></i>
             <h3>Engineering & Architecture</h3>
           </div>
           <div
-            class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center"
+            class="flex-box mx-2 d-flex flex-column justify-content-center"
             style="background-color: #ffc949"
           >
             <i class="fa fa-book mb-3"></i>
             <h3>Learning Management</h3>
           </div>
           <div
-            class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center"
+            class="flex-box mx-2 d-flex flex-column justify-content-center"
             style="background-color: #ff4f81"
           >
             <i class="fa fa-coffee mb-3"></i>
             <h3>Business & Management</h3>
           </div>
           <div
-            class="flex-box p-lg-5 mx-2 d-flex flex-column justify-content-center"
+            class="flex-box mx-2 d-flex flex-column justify-content-center"
             style="background-color: #1ee697"
           >
             <i class="fa fa-hourglass mb-3"></i>
@@ -218,52 +222,50 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- END CAROUSEL -->
 
     <!-- START INTRO -->
-    <div class="intro" style="height: auto">
+    <section class="intro pb-5" style="height: auto">
       <div class="tittle">
         <div class="welcome mb-5">
           <h1>Welcome to <span style="color: #ff6e65">Studious</span></h1>
           <div class="line"></div>
           <div class="line_2"></div>
         </div>
-        <div class="container d-flex">
+        <div class="container d-flex pb-md-5 pb-4">
           <div class="inside d-flex justify-content-center">
             <div
-              class="flex-box mx-2 d-flex flex-column justify-content-center"
+              class="intro_item flex-box d-flex flex-column justify-content-center"
             >
               <span
                 ><i class="fa fa-graduation-cap rounded-circle mt-1"></i
               ></span>
-              <h3 class="my-3 font-weight-bold">Trending Courses</h3>
+              <h3 class="mt-4 mb-3">Trending Courses</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
                 eiusmod te incididunt
               </p>
             </div>
           </div>
-          <div class="inside d-flex justify-content-center">
+          <div class="inside d-flex justify-content-center mt-sm-0 mt-5">
             <div
-              class="flex-box mx-2 d-flex flex-column justify-content-center"
+              class="intro_item flex-box d-flex flex-column justify-content-center"
             >
               <span><i class="fa fa-users rounded-circle mt-1"></i></span>
-              <h3 class="my-3 font-weight-bold">Certified Teachers</h3>
+              <h3 class="mt-4 mb-3">Certified Teachers</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
                 eiusmod te incididunt
               </p>
             </div>
           </div>
-          <div class="inside d-flex justify-content-center">
+          <div class="inside d-flex justify-content-center mt-lg-0 mt-5">
             <div
-              class="flex-box mx-2 d-flex flex-column justify-content-center"
+              class="intro_item flex-box d-flex flex-column justify-content-center"
             >
               <span><i class="fa fa-book rounded-circle mt-1"></i></span>
-              <h3 class="my-3 font-weight-bold">
-                &nbsp Book & &nbspLibrary &nbsp
-              </h3>
+              <h3 class="mt-4 mb-3">&nbsp Book & &nbspLibrary &nbsp</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
                 eiusmod te incididunt
@@ -272,7 +274,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- END INTRO -->
 
     <!-- START COURSE -->

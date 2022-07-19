@@ -8,6 +8,7 @@
   }
 }
 .visible .sticky-video.stuck {
+  z-index: 2;
   position: fixed;
   bottom: 20px;
   left: 20px;
