@@ -1,3 +1,16 @@
+// START STICKY NAVIGATION TOP
+var $stickyNav = $("#sticky-top-nav");
+$window.on("scroll", function () {
+  var windowScrollTop = $window.scrollTop();
+  var stickyNavTop = $stickyNav.offset().top;
+  if (windowScrollTop == stickyNavTop) {
+    $stickyNav.addClass("stuck");
+  } else {
+    $stickyNav.removeClass("stuck");
+  }
+});
+// END STICKY NAVIGATION TOP
+
 // START LIGHT/DARK SWITCH
 document.getElementById("switchButton").onclick = function () {
   document.getElementById("myBody").classList.toggle("light");

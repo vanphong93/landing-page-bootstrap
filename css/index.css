@@ -38,9 +38,56 @@ h6 {
 /* END GLOBAL */
 
 /* START LIGHT/DARK SWITCH */
+/* start sun icon */
+.gg-sun {
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  height: 24px;
+  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat
+      5px -6px/2px 6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px
+      6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px
+      2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+}
+.gg-sun:after,
+.gg-sun:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+.gg-sun,
+.gg-sun:after,
+.gg-sun:before {
+  box-sizing: border-box;
+  display: block;
+  width: 24px;
+}
+.gg-sun:before {
+  transform: rotate(-45deg);
+}
+.gg-sun:after {
+  transform: rotate(45deg);
+}
+/* end sun icon */
+
 #switchButton i {
-  font-size: 20px;
+  font-size: 25px;
+  color: #4867b0;
   transition: all 0.5s;
+}
+
+.light #switchButton i {
+  color: #0d369f;
 }
 
 #switchButton i:hover {
@@ -56,7 +103,7 @@ h6 {
   display: none;
 }
 
-#switchButton .fa-sun {
+#switchButton .gg-sun {
   display: block;
 }
 
@@ -72,13 +119,8 @@ h6 {
   outline: none;
 }
 
-.light #switchButton .fa-sun {
+.light #switchButton .gg-sun {
   display: none;
-}
-
-#switchButton i {
-  font-size: 25px;
-  color: #4867b0;
 }
 /* END LIGHT/DARK SWITCH */
 
@@ -133,9 +175,12 @@ h6 {
 
 .navbar.navbar-expand.sticky-top {
   background-color: #161c2d;
-  padding: 1.2rem 31px;
+  padding: 21px 31px;
+  transition: all 0.5s;
 }
-
+.navbar.navbar-expand.sticky-top.stuck {
+  padding: 11px 31px;
+}
 .light .navbar.navbar-expand.sticky-top {
   background-color: white;
 }
@@ -150,8 +195,8 @@ h6 {
 }
 
 .light .navbar-dark .navbar-nav .nav-link {
+  color: #060606;
   transition: all 0.5s;
-  color: black;
 }
 
 .light .navbar-dark .navbar-nav .nav-link:hover {
@@ -253,23 +298,33 @@ h6 {
   color: #4867b0;
   transition: all 0.7s;
 }
+.light .collapse .btn i {
+  color: #0d369f;
+}
 
 .collapse .btn:hover i {
   color: #ff6e65;
 }
 
 #look {
-  width: 210px;
+  width: 225px;
 }
 
 #search .input-group input {
   color: #fdfffc;
+  font-size: 15px;
   height: initial;
-  padding: 10px 14px;
+  padding: 10px 30px 10px 14px;
+}
+#search .input-group input::placeholder {
+  color: #eee;
 }
 
 .light #search .input-group input {
   color: black;
+}
+.light #search .input-group input::placeholder {
+  color: #6c757d;
 }
 /* END STICKY TOP BAR */
 
@@ -312,24 +367,25 @@ h6 {
   left: 8%;
 }
 
-.carousel h1 {
+.carousel h2 {
+  color: #fff;
   font-size: 70px;
   font-weight: bold;
   line-height: 80px;
 }
 
 .carousel .btn {
-  color: black;
+  color: #060606;
+  font-weight: 600;
   background-color: #fff;
   box-shadow: none;
   padding: 14px 30px;
-  font-weight: 600;
+  transition: all 0.5s;
 }
 
 .carousel .btn-outline:hover {
   color: white;
   background-color: #ff6e65;
-  transition: all 0.5s;
 }
 
 .carousel .btn i {
@@ -417,10 +473,6 @@ h6 {
   color: #0d369f;
 }
 
-.intro .container .inside p {
-  color: #b7b7b7;
-}
-
 .light .intro .welcome h1 {
   color: black;
 }
@@ -431,12 +483,12 @@ h6 {
 }
 
 .light .intro .container .inside h3 {
-  color: black;
+  color: #060606;
 }
 
 .intro .container .inside h3 {
   font-weight: 600;
-  color: white;
+  color: #fdfffc;
   font-size: 24px;
   transition: 0.6s;
 }
@@ -1116,7 +1168,7 @@ p.count-text {
 }
 .footer__body .row .footer__item ul li a i {
   position: relative;
-  top: -1.4px;
+  top: -1px;
   font-size: 0.65rem;
   margin-right: 0.5rem;
   color: #fff;
@@ -1240,7 +1292,8 @@ p.count-text {
 }
 @media screen and (max-width: 991.98px) {
   /* start navigation bar */
-  .navbar.navbar-expand.sticky-top {
+  .navbar.navbar-expand.sticky-top,
+  .navbar.navbar-expand.sticky-top.stuck {
     padding: 8px 15px;
   }
   .collapse.navbar-collapse ul {
