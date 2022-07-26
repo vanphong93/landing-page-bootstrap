@@ -18,41 +18,9 @@ document.getElementById("switchButton").onclick = function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Swipe carousel
 
 $(document).ready(function () {
-
-  // $(".carousel").carousel({
-  //   interval: false,
-  //   pause: true,
-  // });
-
   $(".carousel .carousel-inner").swipe({
     swipeLeft: function (event, direction, distance, duration, fingerCount) {
       this.parent().carousel('next');
