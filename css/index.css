@@ -91,9 +91,11 @@ body.light {
 .top.navbar .left a:hover {
   color: #ff6e65;
 }
-.top.navbar .navbar-brand i{
+
+.top.navbar .navbar-brand i {
   transition: all 0.5s;
 }
+
 .top.navbar .navbar-brand i:hover {
   color: #ff6e65;
 }
@@ -208,9 +210,12 @@ body.light {
 }
 
 .collapse .btn {
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 30px;
+  border-top: 2px solid rgb(238, 238, 238);
+  border-right: 2px solid rgb(238, 238, 238);
+  border-bottom: 2px solid rgb(238, 238, 238);
+  border-image: initial;
   border-left: none;
-  border-color: #fff;
 }
 
 .collapse .btn:focus {
@@ -221,22 +226,6 @@ body.light {
 .collapse .form-control:focus {
   box-shadow: none;
   border-color: #fff;
-}
-
-.light .collapse .btn {
-  border-radius: 0 1rem 1rem 0;
-  border-left: none;
-  border-color: rgba(0, 0, 0, 0.226);
-}
-
-.light .collapse .btn:focus {
-  border-color: rgba(0, 0, 0, 0.226);
-  box-shadow: none;
-}
-
-.light .collapse .form-control:focus {
-  box-shadow: none;
-  border-color: rgba(0, 0, 0, 0.226);
 }
 
 .collapse .btn i {
@@ -254,6 +243,15 @@ body.light {
 
 #search .input-group input {
   color: white;
+  font-size: 15px;
+  height: initial;
+  padding: 10px 30px 10px 14px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top: 2px solid rgb(238, 238, 238);
+  border-left: 2px solid rgb(238, 238, 238);
+  border-bottom: 2px solid rgb(238, 238, 238);
+  border-image: initial;
 }
 
 .light #search .input-group input {
@@ -450,6 +448,17 @@ body.light {
 }
 
 @media screen and (max-width:992px) {
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #4867b0;
+  }
+
+  .light .navbar-dark .navbar-nav .nav-link:hover {
+    color: #4867b0;
+  }
+
+  .navbar-dark .navbar-nav .nav-item.active .nav-link {
+    color: #4867b0;
+  }
 
   .collapse.navbar-collapse ul {
     margin: 0 auto;
@@ -545,6 +554,7 @@ body.light {
   .carousel-indicators {
     bottom: 10%;
   }
+
   .carousel_bottom .flex-box {
     width: 80%;
     margin: 0 0 15px 0;
@@ -556,9 +566,10 @@ body.light {
   }
 
   .carousel-caption {
-    left: 6%;
-    width: 90%;
+    left: 14%;
+    width: 80%;
   }
+
   .intro .tittle {
     text-align: center;
     margin-top: 830px;
@@ -566,6 +577,10 @@ body.light {
 }
 
 @media screen and (max-width:576px) {
+  .carousel-caption {
+    left: 8%;
+  }
+
   .intro .container {
     flex-direction: column;
   }
@@ -573,6 +588,7 @@ body.light {
   .intro .container .inside {
     width: 100%;
   }
+
   .carousel_bottom .flex-box {
     width: 100%;
     margin: 0 0 15px 0;
