@@ -49,10 +49,14 @@ h6 {
   position: relative;
   transform: scale(var(--ggs, 1));
   height: 24px;
-  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px,
-    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px,
-    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px,
-    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat
+      5px -6px/2px 6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px
+      6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px
+      2px;
   border-radius: 100px;
   box-shadow: inset 0 0 0 2px;
   border: 6px solid transparent;
@@ -710,7 +714,7 @@ ul.rating_list li a {
   padding-bottom: 1em;
 }
 
-.Course_content-main .top_content_boder>a {
+.Course_content-main .top_content_boder > a {
   font-size: 14px;
 }
 
@@ -976,29 +980,54 @@ p.count-text {
   padding-top: 8px;
 }
 
-.feedback__bottom .feedback__item .card-body .feedback__student .student__image {
+.feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__image {
   width: 23.5%;
   margin-right: 5px;
   flex-shrink: 0;
 }
 
-.feedback__bottom .feedback__item .card-body .feedback__student .student__image img {
+.feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__image
+  img {
   border-radius: 50%;
   max-width: 100%;
 }
 
-.feedback__bottom .feedback__item .card-body .feedback__student .student__detail p:first-child {
+.feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__detail
+  p:first-child {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   color: #fdfffc;
 }
 
-.light .feedback__bottom .feedback__item .card-body .feedback__student .student__detail p:first-child {
+.light
+  .feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__detail
+  p:first-child {
   color: #060606;
 }
 
-.feedback__bottom .feedback__item .card-body .feedback__student .student__detail p:last-child {
+.feedback__bottom
+  .feedback__item
+  .card-body
+  .feedback__student
+  .student__detail
+  p:last-child {
   font-size: 0.81rem;
 }
 
@@ -1395,7 +1424,6 @@ p.count-text {
 
 /* START RESPONSIVE */
 @media screen and (max-width: 1199.98px) {
-
   /* start carousel */
   .carousel-caption {
     left: 5%;
@@ -1416,7 +1444,11 @@ p.count-text {
   /* end carousel */
 
   /* start feedback */
-  .feedback__bottom .feedback__item .card-body .feedback__student .student__image {
+  .feedback__bottom
+    .feedback__item
+    .card-body
+    .feedback__student
+    .student__image {
     width: 33.33%;
     /* end feedback */
   }
@@ -1429,7 +1461,6 @@ p.count-text {
 }
 
 @media screen and (max-width: 991.98px) {
-
   /* start navigation bar */
   .navbar.navbar-expand.sticky-top,
   .navbar.navbar-expand.sticky-top.stuck {
@@ -1584,7 +1615,6 @@ p.count-text {
 }
 
 @media screen and (max-width: 767.98px) {
-
   /* start carousel */
   .carousel h2 {
     font-size: 45px;
@@ -1627,7 +1657,11 @@ p.count-text {
   /* end intro */
 
   /* start feedback */
-  .feedback__bottom .feedback__item .card-body .feedback__student .student__image {
+  .feedback__bottom
+    .feedback__item
+    .card-body
+    .feedback__student
+    .student__image {
     width: 16.68%;
   }
 
@@ -1661,7 +1695,6 @@ p.count-text {
 }
 
 @media screen and (max-width: 575.98px) {
-
   /* start carousel */
   .carousel-caption {
     left: 8%;
@@ -1708,13 +1741,16 @@ p.count-text {
 }
 
 @media screen and (max-width: 491px) {
-
   /* start feedback */
   .feedback__top h2 {
     font-size: 2.19rem;
   }
 
-  .feedback__bottom .feedback__item .card-body .feedback__student .student__image {
+  .feedback__bottom
+    .feedback__item
+    .card-body
+    .feedback__student
+    .student__image {
     width: 23%;
   }
 
@@ -1737,7 +1773,6 @@ p.count-text {
 }
 
 @media screen and (max-width: 440px) {
-
   /* start instructor */
   .instructor__top h2 {
     font-size: 1.88rem;
